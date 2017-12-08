@@ -1,0 +1,403 @@
+{
+    "true": {
+        "prefix": "true",
+        "body": "true"
+    },
+    "false": {
+        "prefix": "false",
+        "body": "false"
+    },
+    "FILL": {
+        "prefix": "FILL",
+        "body": "'FILL'"
+    },
+    "SIZE": {
+        "prefix": "SIZE",
+        "body": "'SIZE'"
+    },
+    "NONE": {
+        "prefix": "NONE",
+        "body": "Ti.UI.ListViewSeparatorStyle.NONE"
+    },
+    "SINGLE_LINE": {
+        "prefix": "SINGLE_LINE",
+        "body": "Ti.UI.ListViewSeparatorStyle.SINGLE_LINE"
+    },
+    "SCALE_TYPE_ASPECT_FILL": {
+        "prefix": "SCALE_TYPE_ASPECT_FILL",
+        "body": "Ti.UI.SCALE_TYPE_ASPECT_FILL"
+    },
+    "SCALE_TYPE_ASPECT_FIT": {
+        "prefix": "SCALE_TYPE_ASPECT_FIT",
+        "body": "Ti.UI.SCALE_TYPE_ASPECT_FIT"
+    },
+    "TEXT_ELLIPSIZE_TAIL": {
+        "prefix": "TEXT_ELLIPSIZE_TAIL",
+        "body": "Ti.UI.TEXT_ELLIPSIZE_TAIL"
+    },
+    "TEXT_ELLIPSIZE_HEAD": {
+        "prefix": "TEXT_ELLIPSIZE_HEAD",
+        "body": "Ti.UI.TEXT_ELLIPSIZE_HEAD"
+    },
+    "TEXT_ELLIPSIZE_MIDDLE": {
+        "prefix": "TEXT_ELLIPSIZE_MIDDLE",
+        "body": "Ti.UI.TEXT_ELLIPSIZE_MIDDLE"
+    },
+    "PORTRAIT": {
+        "prefix": "PORTRAIT",
+        "body": "Ti.UI.PORTRAIT"
+    },
+    "UPSIDE_PORTRAIT": {
+        "prefix": "UPSIDE_PORTRAIT",
+        "body": "Ti.UI.UPSIDE_PORTRAIT"
+    },
+    "LANDSCAPE_LEFT": {
+        "prefix": "LANDSCAPE_LEFT",
+        "body": "Ti.UI.LANDSCAPE_LEFT"
+    },
+    "LANDSCAPE_RIGHT": {
+        "prefix": "LANDSCAPE_RIGHT",
+        "body": "Ti.UI.LANDSCAPE_RIGHT"
+    },
+    "BIG": {
+        "prefix": "BIG",
+        "body": "Ti.UI.ActivityIndicatorStyle.BIG"
+    },
+    "KEYBOARD_NUMBER_PAD": {
+        "prefix": "KEYBOARD_NUMBER_PAD",
+        "body": "Ti.UI.KEYBOARD_NUMBER_PAD"
+    },
+    "width\tprop. (rjss)": {
+        "prefix": "width\tprop. (rjss)",
+        "body": "width:${0:0}"
+    },
+    "height\tprop. (rjss)": {
+        "prefix": "height\tprop. (rjss)",
+        "body": "height:${0:0}"
+    },
+    "left\tprop. (rjss)": {
+        "prefix": "left\tprop. (rjss)",
+        "body": "left:${0:0}"
+    },
+    "right\tprop. (rjss)": {
+        "prefix": "right\tprop. (rjss)",
+        "body": "right:${0}"
+    },
+    "top\tprop. (rjss)": {
+        "prefix": "top\tprop. (rjss)",
+        "body": "top:${0:0}"
+    },
+    "bottom\tprop. (rjss)": {
+        "prefix": "bottom\tprop. (rjss)",
+        "body": "bottom:${0:0}"
+    },
+    "opacity\tprop. (rjss)": {
+        "prefix": "opacity\tprop. (rjss)",
+        "body": "opacity:${0:0}"
+    },
+    "borderRadius\tprop. (rjss)": {
+        "prefix": "borderRadius\tprop. (rjss)",
+        "body": "borderRadius:${0:0}"
+    },
+    "borderWidth\tprop. (rjss)": {
+        "prefix": "borderWidth\tprop. (rjss)",
+        "body": "borderWidth:${0:1}"
+    },
+    "maxLines\tprop. (rjss)": {
+        "prefix": "maxLines\tprop. (rjss)",
+        "body": "maxLines:${0:1}"
+    },
+    "cacheSize\tprop. (rjss)": {
+        "prefix": "cacheSize\tprop. (rjss)",
+        "body": "cacheSize:${0:3}"
+    },
+    "maxLength\tprop. (rjss)": {
+        "prefix": "maxLength\tprop. (rjss)",
+        "body": "maxLength:${0:1}"
+    },
+    "touchEnabled\tprop. (rjss)": {
+        "prefix": "touchEnabled\tprop. (rjss)",
+        "body": "touchEnabled:${0:false}"
+    },
+    "visible\tprop. (rjss)": {
+        "prefix": "visible\tprop. (rjss)",
+        "body": "visible:${0:false}"
+    },
+    "exitOnClose\tprop. (rjss)": {
+        "prefix": "exitOnClose\tprop. (rjss)",
+        "body": "exitOnClose:${0:true}"
+    },
+    "enabled\tprop. (rjss)": {
+        "prefix": "enabled\tprop. (rjss)",
+        "body": "enabled:${0:false}"
+    },
+    "editable\tprop. (rjss)": {
+        "prefix": "editable\tprop. (rjss)",
+        "body": "editable:${0:false}"
+    },
+    "persistent\tprop. (rjss)": {
+        "prefix": "persistent\tprop. (rjss)",
+        "body": "persistent:${0:true}"
+    },
+    "showPagingControl\tprop. (rjss)": {
+        "prefix": "showPagingControl\tprop. (rjss)",
+        "body": "showPagingControl:${0:false}"
+    },
+    "scalesPageToFit\tprop. (rjss)": {
+        "prefix": "scalesPageToFit\tprop. (rjss)",
+        "body": "scalesPageToFit:${0:true}"
+    },
+    "enableZoomControls\tprop. (rjss)": {
+        "prefix": "enableZoomControls\tprop. (rjss)",
+        "body": "enableZoomControls:${0:false}"
+    },
+    "disableBounce\tprop. (rjss)": {
+        "prefix": "disableBounce\tprop. (rjss)",
+        "body": "disableBounce:${0:true}"
+    },
+    "allowsSelection\tprop. (rjss)": {
+        "prefix": "allowsSelection\tprop. (rjss)",
+        "body": "allowsSelection:${0:false}"
+    },
+    "delaysContentTouches\tprop. (rjss)": {
+        "prefix": "delaysContentTouches\tprop. (rjss)",
+        "body": "delaysContentTouches:${0:false}"
+    },
+    "localLoadSync\tprop. (rjss)": {
+        "prefix": "localLoadSync\tprop. (rjss)",
+        "body": "localLoadSync:${0:true}"
+    },
+    "backgroundGradient\tprop. (rjss)": {
+        "prefix": "backgroundGradient\tprop. (rjss)",
+        "body": "backgroundGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "backgroundSelectedGradient\tprop. (rjss)": {
+        "prefix": "backgroundSelectedGradient\tprop. (rjss)",
+        "body": "backgroundSelectedGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "backgroundDisabledGradient\tprop. (rjss)": {
+        "prefix": "backgroundDisabledGradient\tprop. (rjss)",
+        "body": "backgroundDisabledGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "selectedBackgroundGradient\tprop. (rjss)": {
+        "prefix": "selectedBackgroundGradient\tprop. (rjss)",
+        "body": "backgroundDisabledGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "lineGradient\tprop. (rjss)": {
+        "prefix": "lineGradient\tprop. (rjss)",
+        "body": "lineGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "fillGradient\tprop. (rjss)": {
+        "prefix": "fillGradient\tprop. (rjss)",
+        "body": "fillGradient:{\n\ttype : '${1:linear}',\n\tcolors : ['${2:white}'],\n\tstartPoint : {\n\t\tx : ${3:0},\n\t\ty : ${4:0},\n\t},\n\tendPoint : {\n\t\tx : ${5:0},\n\t\ty : ${6:\"100%\"},\n\t}\n}"
+    },
+    "value\tprop. (rjss)": {
+        "prefix": "value\tprop. (rjss)",
+        "body": "value:${1}"
+    },
+    "font\tprop. (rjss)": {
+        "prefix": "font\tprop. (rjss)",
+        "body": "font:{${1}}"
+    },
+    "size\tprop. (rjss)": {
+        "prefix": "size\tprop. (rjss)",
+        "body": "size:${1:14}"
+    },
+    "family\tprop. (rjss)": {
+        "prefix": "family\tprop. (rjss)",
+        "body": "family:'${1}'"
+    },
+    "weight\tprop. (rjss)": {
+        "prefix": "weight\tprop. (rjss)",
+        "body": "weight:'${1:bold}'"
+    },
+    "padding\tprop. (rjss)": {
+        "prefix": "padding\tprop. (rjss)",
+        "body": "padding:{${1}}"
+    },
+    "borderPadding\tprop. (rjss)": {
+        "prefix": "borderPadding\tprop. (rjss)",
+        "body": "borderPadding:{${1}}"
+    },
+    "imageCap\tprop. (rjss)": {
+        "prefix": "imageCap\tprop. (rjss)",
+        "body": "imageCap:{${1}}"
+    },
+    "color\tprop. (rjss)": {
+        "prefix": "color\tprop. (rjss)",
+        "body": "color:'#${1}'"
+    },
+    "backgroundColor\tprop. (rjss)": {
+        "prefix": "backgroundColor\tprop. (rjss)",
+        "body": "backgroundColor:'#${1}'"
+    },
+    "backgroundDisabledColor\tprop. (rjss)": {
+        "prefix": "backgroundDisabledColor\tprop. (rjss)",
+        "body": "backgroundDisabledColor:'#${1}'"
+    },
+    "backgroundSelectedColor\tprop. (rjss)": {
+        "prefix": "backgroundSelectedColor\tprop. (rjss)",
+        "body": "backgroundSelectedColor:'#${1}'"
+    },
+    "selectedBackgroundColor\tprop. (rjss)": {
+        "prefix": "selectedBackgroundColor\tprop. (rjss)",
+        "body": "selectedBackgroundColor:'#${1}'"
+    },
+    "borderColor\tprop. (rjss)": {
+        "prefix": "borderColor\tprop. (rjss)",
+        "body": "borderColor:'#${1}'"
+    },
+    "borderSelectedColor\tprop. (rjss)": {
+        "prefix": "borderSelectedColor\tprop. (rjss)",
+        "body": "borderSelectedColor:'#${1}'"
+    },
+    "borderDisabledColor\tprop. (rjss)": {
+        "prefix": "borderDisabledColor\tprop. (rjss)",
+        "body": "borderDisabledColor:'#${1}'"
+    },
+    "selectedColor\tprop. (rjss)": {
+        "prefix": "selectedColor\tprop. (rjss)",
+        "body": "selectedColor:'#${1}'"
+    },
+    "disabledColor\tprop. (rjss)": {
+        "prefix": "disabledColor\tprop. (rjss)",
+        "body": "disabledColor:'#${1}'"
+    },
+    "image\tprop. (rjss)": {
+        "prefix": "image\tprop. (rjss)",
+        "body": "image:'${1}'"
+    },
+    "backgroundImage\tprop. (rjss)": {
+        "prefix": "backgroundImage\tprop. (rjss)",
+        "body": "backgroundImage:'${1}'"
+    },
+    "backgroundSelectedImage\tprop. (rjss)": {
+        "prefix": "backgroundSelectedImage\tprop. (rjss)",
+        "body": "backgroundSelectedImage:'${1}'"
+    },
+    "backgroundDisabledImage\tprop. (rjss)": {
+        "prefix": "backgroundDisabledImage\tprop. (rjss)",
+        "body": "backgroundDisabledImage:'${1}'"
+    },
+    "selectedBackgroundImage\tprop. (rjss)": {
+        "prefix": "selectedBackgroundImage\tprop. (rjss)",
+        "body": "selectedBackgroundImage:'${1}'"
+    },
+    "viewMask\tprop. (rjss)": {
+        "prefix": "viewMask\tprop. (rjss)",
+        "body": "viewMask:'${1}'"
+    },
+    "text\tprop. (rjss)": {
+        "prefix": "text\tprop. (rjss)",
+        "body": "text:'${1}'"
+    },
+    "html\tprop. (rjss)": {
+        "prefix": "html\tprop. (rjss)",
+        "body": "html:'${1}'"
+    },
+    "message\tprop. (rjss)": {
+        "prefix": "message\tprop. (rjss)",
+        "body": "message:'${1}'"
+    },
+    "title\tprop. (rjss)": {
+        "prefix": "title\tprop. (rjss)",
+        "body": "title:'${1}'"
+    },
+    "rclass\tprop. (rjss)": {
+        "prefix": "rclass\tprop. (rjss)",
+        "body": "rclass:'${1}'"
+    },
+    "rid\tprop. (rjss)": {
+        "prefix": "rid\tprop. (rjss)",
+        "body": "rid:'${1}'"
+    },
+    "headerTitle\tprop. (rjss)": {
+        "prefix": "headerTitle\tprop. (rjss)",
+        "body": "headerTitle:'${1}'"
+    },
+    "footerTitle\tprop. (rjss)": {
+        "prefix": "footerTitle\tprop. (rjss)",
+        "body": "footerTitle:'${1}'"
+    },
+    "defaultItemTemplate\tprop. (rjss)": {
+        "prefix": "defaultItemTemplate\tprop. (rjss)",
+        "body": "defaultItemTemplate:'${1}'"
+    },
+    "type\tprop. (rjss)": {
+        "prefix": "type\tprop. (rjss)",
+        "body": "type:'Ti.UI.${1}'"
+    },
+    "separatorStyle\tprop. (rjss)": {
+        "prefix": "separatorStyle\tprop. (rjss)",
+        "body": "separatorStyle:${1:Ti.UI.ListViewSeparatorStyle.NONE}"
+    },
+    "ellipsize\tprop. (rjss)": {
+        "prefix": "ellipsize\tprop. (rjss)",
+        "body": "ellipsize:${1:Ti.UI.TEXT_ELLIPSIZE_TAIL}"
+    },
+    "multiLineEllipsize\tprop. (rjss)": {
+        "prefix": "multiLineEllipsize\tprop. (rjss)",
+        "body": "multiLineEllipsize:${1:Ti.UI.TEXT_ELLIPSIZE_TAIL}"
+    },
+    "scaleType\tprop. (rjss)": {
+        "prefix": "scaleType\tprop. (rjss)",
+        "body": "scaleType:${1:Ti.UI.SCALE_TYPE_ASPECT_FIT}"
+    },
+    "textAlign\tprop. (rjss)": {
+        "prefix": "textAlign\tprop. (rjss)",
+        "body": "textAlign:'${1:center}'"
+    },
+    "verticalAlign\tprop. (rjss)": {
+        "prefix": "verticalAlign\tprop. (rjss)",
+        "body": "verticalAlign:'${1:middle}'"
+    },
+    "layout\tprop. (rjss)": {
+        "prefix": "layout\tprop. (rjss)",
+        "body": "layout:'${1:horizontal}'"
+    },
+    "horizontalWrap\tprop. (rjss)": {
+        "prefix": "horizontalWrap\tprop. (rjss)",
+        "body": "horizontalWrap:${1:true}"
+    },
+    "navBarHidden\tprop. (rjss)": {
+        "prefix": "navBarHidden\tprop. (rjss)",
+        "body": "navBarHidden:${1:true}"
+    },
+    "orientationModes\tprop. (rjss)": {
+        "prefix": "orientationModes\tprop. (rjss)",
+        "body": "orientationModes:[${1:Ti.UI.PORTRAIT}]"
+    },
+    "style\tprop. (rjss)": {
+        "prefix": "style\tprop. (rjss)",
+        "body": "style:${1}"
+    },
+    "keyboardType\tprop. (rjss)": {
+        "prefix": "keyboardType\tprop. (rjss)",
+        "body": "keyboardType:[${1:Ti.UI.KEYBOARD_NUMBER_PAD}]"
+    },
+    "items\tprop. (rjss)": {
+        "prefix": "items\tprop. (rjss)",
+        "body": "items:[${1}]"
+    },
+    "sections\tprop. (rjss)": {
+        "prefix": "sections\tprop. (rjss)",
+        "body": "sections:[${1}]"
+    },
+    "childTemplates\tprop. (rjss)": {
+
+        "prefix": "childTemplates\tprop. (rjss)",
+        "body": "childTemplates:[${1}]"
+    },
+    "properties\tprop. (rjss)": {
+        "prefix": "properties\tprop. (rjss)",
+        "body": "properties:{${1}}"
+    },
+    "templates\tprop. (rjss)": {
+        "prefix": "templates\tprop. (rjss)",
+        "body": "templates:{${1}}"
+    },
+    "transparent\tstring. (rjss)": {
+        "prefix": "transparent\tstring. (rjss)",
+        "body": "'transparent'"
+    }
+}

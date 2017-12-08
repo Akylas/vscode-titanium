@@ -1,22 +1,48 @@
 {
-  "name": "vscode-titanium",
-  "displayName": "Extension for Titanium, Alloy and JAST",
-  "description": "Extension for Titanium, Alloy and JAST",
+  "name": "vscode-ti-build",
+  "displayName": "Titanium build",
+  "description": "Titanium build",
   "version": "0.2.0",
   "publisher": "dbankier",
   "engines": {
-    "vscode": "^0.10.1"
+    "vscode": "^1.1.x"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Languages",
+    "Snippets"
   ],
   "activationEvents": [
     "workspaceContains:tiapp.xml"
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "commands": [
+    "languages": [{
+      "id": "rjss",
+      "extensions": [
+        ".rjss"
+      ],
+      "configuration": "./rjss.configuration.json"
+    }],
+    "grammars": [{
+      "language": "rjss",
+      "scopeName": "source.rjss",
+      "path": "./syntaxes/rjss.tmLanguage"
+    }],
+    "snippets": [{
+        "language": "rjss",
+        "path": "./snippets/rjss.json"
+      },
       {
+        "language": "typescript",
+        "path": "./snippets/rjss.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/rjss.json"
+      }
+    ],
+    "commands": [{
         "command": "extension.openAlloyFiles",
         "title": "Alloy: Open Relative Files"
       },
@@ -35,49 +61,89 @@
       {
         "command": "extension.tiClean",
         "title": "Titanium: clean"
-      }
-    ],
-    "keybindings": [
-      {
-        "command": "extension.openAlloyFiles",
-        "key": "ctrl+l"
       },
       {
-        "command": "extension.openAlloyFiles",
-        "key": "cmd+l"
+        "command": "extension.tiRunLastBuild",
+        "title": "Titanium: run last build"
+      },
+      {
+        "command": "extension.tiShowBuildHistory",
+        "title": "Titanium: build History"
+      },
+      {
+        "command": "extension.tiTerminateBuild",
+        "title": "Titanium: terminate build"
+      }
+    ],
+    "keybindings": [{
+        "command": "extension.tiBuild",
+        "when": "inTitaniumProject",
+        "key": "ctrl+b",
+        "mac": "cmd+b"
+      },
+      {
+        "command": "extension.tiRunLastBuild",
+        "when": "inTitaniumProject",
+        "key": "ctrl+r",
+        "mac": "cmd+r"
+      },
+      {
+        "command": "extension.tiShowBuildHistory",
+        "when": "inTitaniumProject",
+        "key": "ctrl+shift+r",
+        "mac": "cmd+shift+r"
+      },
+      {
+        "command": "extension.tiClean",
+        "when": "inTitaniumProject",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c"
+      },
+      {
+        "command": "extension.tiTerminateBuild",
+        "when": "inTitaniumProject",
+        "key": "ctrl+c"
       }
     ],
     "configuration": {
-			"type": "object",
-			"title": "Alloy Configuration",
-			"properties": {
-				"alloy.style": {
-					"type": "string",
-					"default": ".stss",
-					"description": "Alloy style file extension"
-				},
-				"alloy.view": {
-					"type": "string",
-					"default": ".jade",
-					"description": "Alloy view file extension"
-				},
-				"alloy.controller": {
-					"type": "string",
-					"default": ".js",
-					"description": "Alloy controller file extension"
-				}
+      "type": "object",
+      "title": "Alloy Configuration",
+      "properties": {
+        "alloy.style": {
+          "type": "string",
+          "default": ".stss",
+          "description": "Alloy style file extension"
+        },
+        "alloy.view": {
+          "type": "string",
+          "default": ".jade",
+          "description": "Alloy view file extension"
+        },
+        "alloy.controller": {
+          "type": "string",
+          "default": ".js",
+          "description": "Alloy controller file extension"
+        }
       }
     }
   },
+
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "plist": "^2.1.0",
+    "shelljs": "^0.7.7"
+  },
   "scripts": {
-    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^1.6.2",
-    "vscode": "0.10.x"
-  },
-  "dependencies": {
-    "shelljs": "^0.5.3"
+    "typescript": "^2.4.1",
+    "vscode": "^1.1.4",
+    "mocha": "^3.4.2",
+    "@types/node": "^8.0.13",
+    "@types/mocha": "^2.2.41"
   }
 }
