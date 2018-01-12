@@ -147,7 +147,12 @@ export class TiBuild {
             }
         });
     }
-
+    windowsWithTerminal:any[] = []
+    private onTerminalClosed = (eventTerminal)=> {
+        if (eventTerminal === this.terminal) {
+            this.terminal = null;
+        }
+    }
     private executeTiCommand(c: Array<string>, saveInHistory: boolean = true) {
         if (saveInHistory) {
             const toSave = JSON.stringify(c);
@@ -164,9 +169,16 @@ export class TiBuild {
         // } else {
         //     this.channel.clear();
         // }
-
+        const rootDir = vscode.workspace.rootPath;
+        let needsDelay = false;
         if (!this.terminal) {
-            this.terminal = vscode.window.createTerminal("titanium");
+            needsDelay = true;
+            const win:any = vscode.window;
+            this.terminal = win.createTerminal({cwd:rootDir, name:"titanium"});
+            if (this.windowsWithTerminal.indexOf(win) === -1) {
+                this.windowsWithTerminal.push(win);
+                win.onDidCloseTerminal(this.onTerminalClosed);
+            }
         } else {
             // this.channel.clear();
         }
@@ -179,14 +191,23 @@ export class TiBuild {
         // if (this.currentCommand) {
         //     this.currentCommand.kill();
         // }
-        this.terminal.sendText('\x03');
-        this.terminal.sendText('clear');
         
         var args = c.concat(['-s', this.tiapp['sdk-version'], extra_flags_map[this.type]])
 
-        console.log('cwd', vscode.workspace.rootPath);
+        console.log('cwd', rootDir);
         console.log('ti', args.join(' '));
-        this.terminal.sendText('ti ' + args.join(' '));
+
+        if (needsDelay) {
+            setTimeout(()=>{
+                this.terminal.sendText('ti ' + args.join(' '));
+            }, 50);
+
+        } else {
+            this.terminal.sendText('\x03');
+            this.terminal.sendText('clear');
+            this.terminal.sendText('ti ' + args.join(' '));
+        }
+
         // this.currentCommand = child_process.spawn('ti', args, {
         //     cwd: vscode.workspace.rootPath
         // });
@@ -208,7 +229,7 @@ export class TiBuild {
         //     this.terminal.sendText('Failed to start build:' + err.toString());
         //     this.currentCommand = null;
         // });
-        return this.terminal.show()
+        return this.terminal.show(true)
     }
 
 

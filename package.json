@@ -17,19 +17,24 @@
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "languages": [{
-      "id": "rjss",
-      "extensions": [
-        ".rjss"
-      ],
-      "configuration": "./rjss.configuration.json"
-    }],
-    "grammars": [{
-      "language": "rjss",
-      "scopeName": "source.rjss",
-      "path": "./syntaxes/rjss.tmLanguage"
-    }],
-    "snippets": [{
+    "languages": [
+      {
+        "id": "rjss",
+        "extensions": [
+          ".rjss"
+        ],
+        "configuration": "./rjss.configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rjss",
+        "scopeName": "source.rjss",
+        "path": "./syntaxes/rjss.tmLanguage"
+      }
+    ],
+    "snippets": [
+      {
         "language": "rjss",
         "path": "./snippets/rjss.json"
       },
@@ -42,7 +47,8 @@
         "path": "./snippets/rjss.json"
       }
     ],
-    "commands": [{
+    "commands": [
+      {
         "command": "extension.openAlloyFiles",
         "title": "Alloy: Open Relative Files"
       },
@@ -75,7 +81,8 @@
         "title": "Titanium: terminate build"
       }
     ],
-    "keybindings": [{
+    "keybindings": [
+      {
         "command": "extension.tiBuild",
         "when": "inTitaniumProject",
         "key": "ctrl+b",
@@ -127,7 +134,6 @@
       }
     }
   },
-
   "dependencies": {
     "child-process-promise": "^2.2.1",
     "plist": "^2.1.0",
@@ -140,10 +146,10 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.4.1",
-    "vscode": "^1.1.4",
-    "mocha": "^3.4.2",
-    "@types/node": "^8.0.13",
-    "@types/mocha": "^2.2.41"
+    "typescript": "^2.6.2",
+    "vscode": "^1.1.10",
+    "mocha": "^4.1.0",
+    "@types/node": "^9.3.0",
+    "@types/mocha": "^2.2.46"
   }
 }
